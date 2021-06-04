@@ -1,0 +1,42 @@
+{
+  "name": "todo-list",
+  "version": "0.0.1",
+  "description": "TODO list",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "./node_modules/.bin/mocha tests",
+    "setup": "node ./plugins/db/setup-db.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wardatallah/todo-list.git"
+  },
+  "keywords": [
+    "todo",
+    "list"
+  ],
+  "author": "Ward Atallah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wardatallah/todo-list/issues"
+  },
+  "homepage": "https://github.com/wardatallah/todo-list#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "mocha": "^8.4.0",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.9",
+    "pg": "^8.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "request": "^2.88.2"
+  }
+}
